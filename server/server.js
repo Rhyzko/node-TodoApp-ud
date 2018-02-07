@@ -127,15 +127,6 @@ app.post('/users/login', (req, res) => {
   }).catch((e) => {
     res.status(400).send();
   });
-  // User.findOne({email: body.email}).then((user) => {
-  //   if (!user) {
-  //     return Promise.reject();
-  //   }
-    
-    
-  // }).catch((e) => {
-  //   res.status(401).send(e);
-  // });
 });
 
 app.listen(port, () => {
